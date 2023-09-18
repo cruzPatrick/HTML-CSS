@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+}
+
+:root{
+    --cor01: #ebe5c5;
+    --cor02: #83E1AD;
+    --cor03: #3DDC84;
+    --cor04: #2FA866;
+    --cor05: #1a5c37;
+    --cor06: #063D1E;
+
+    --fontP: arial, verdana, helvetica, sans-serif;
+    --fontDest: 'Bebas Neue', sans-serif;
+    --fontA: 'Android', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor01);
+    font-family: var(--fontP);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor06));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fontdest);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.219);
+}
+
+header > p{
+    font-family: var(--fontP);
+    font-weight: normal;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.192);
+}
+
+nav{
+    background-color: var(--cor06);
+    padding:10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
+}
+
+nav > a{
+    color:var(--cor02);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav>a:hover{
+    background-color: var(--cor04);
+    color: var(--cor06);
+
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+
+}
+
+main h1{
+    color: var(--cor06);
+    font-family: var(--fontA);
+    font-weight: normal;
+}
+
+main h2{
+    font-family: var(--fontA);
+    font-weight: normal;
+    color: var(--cor05);
+    font-size: 1.2em;
+    text-indent: 6px;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    margin-right: 0px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.2em;
+}
+
+main strong{
+    color: var(--cor05);
+    font-weight: bold;
+}
+
+main a{
+    color: var(--cor06);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    background-color: var(--cor02);
+}
+
+main a:hover{
+    color:var(--cor04);
+    text-decoration: underline;
+}
+
+a.ext::after{
+    content: '\00a0\1F517';    
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+div.video{
+    background-color: var(--cor06);
+    margiN: 0px -20px 30px -20px;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 56.5%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    background-color: var(--cor02);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.233);
+}
+
+aside h3{
+    background-color:  var(--cor05);
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+aside ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00a0\00a0';
+    padding: 10px;
+    columns: 2;
+    margin: 0px -10px 0px -10px;
+    background-color: rgb(232, 252, 227);
+    color: var(--cor04);
+
+}
+
+aside abbr{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--cor06);
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+footer a:hover{
+    color: var(--cor03);
+    text-decoration: underline;
+}

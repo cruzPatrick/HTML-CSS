@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    background-color: #72F4E1;
+    font: 1em 'verdana', 'arial', 'sans-serif';
+}
+
+h1{
+    font-size: 3em;
+    color: #55B5A7;
+    text-align: right;
+}
+
+#principal{ /*pode ser h1#principal para especiicar*/
+    background-color: #193631;
+    text-align: center;
+}
+
+h2{
+    color: #37756C;
+    font-size: 1.5em;
+}
+
+.basico{
+    color: rgb(112, 165, 116);
+}
+.intermed{
+    color: rgb(163, 163, 102);
+}
+
+.avançado{
+    color: rgb(150, 96, 96);
+}
+
+.especial{
+    background-color: rgba(255, 255, 0, 0.397);
+}

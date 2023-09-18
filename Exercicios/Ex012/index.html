@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos em html5</title>
+</head>
+<body>
+    <h1>Videos hospedados localmente</h1>
+    <p>Abaixo terá um video que está hospedado dentro do site</p>
+    <p>Há duas formas de fazer isso:</p>
+    <p>A primeira é essa</p>
+    <video src="midia/meuvideo-mp4.mp4" width="560" poster="imagens/26350.jpg" controls></video>
+
+    <p>A segunda é essa:</p>
+    <video controls poster="imagens/26350.jpg" width="560">
+        <source src="midia/meuvideo-mp4.mp4" type="video/mp4">
+        <source src="midia/meuvideo-m4v.m4v" type="video/mp4">
+        <source src="midia/meuvideo-ogv.ogv" type="video/ogv">
+        <source src="midia/meuvideo-webm.webm" type="video/webm">
+        <p>Seu navegador não foi capaz de abrir o video <a href="midia/meuvideo-mp4.mp4">Clique aqui</a>para download</p>
+    </video>
+    
+    <h1>Videos hospedados no youtube</h1>
+    <p>Aqui vemos como colocar um video com o youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fX78pL_nnRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Videos hospedados com o vimeo</h1>
+    <p>Agora com o vimeo</p>
+    <iframe src="https://player.vimeo.com/video/126287950?h=c655f0ff29" width="560" height="303" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

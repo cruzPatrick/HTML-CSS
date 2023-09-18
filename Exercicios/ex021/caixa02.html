@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin:10px;
+        }
+
+
+        nav{
+            background-color: rgb(27, 46, 46);
+            padding: 3px;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.438);
+        }
+
+        nav > p{
+            font-weight: bold;
+            font-size: large;
+            margin: 0px;
+            padding:1px;
+            color:rgb(209, 255, 255);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover{ /*tem que estar junto para funcionar*/
+            text-decoration: underline;
+        }
+
+        article{
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        article > aside{
+
+            background-color: rgb(152, 187, 199);
+            padding: 1px;
+            margin: 0px;
+            border-radius: 3px;
+        }
+
+        main{
+            background-color: white;
+            border-radius: 10px 20px;
+            padding: 10px;
+            margin: auto;
+        }
+
+        section > a {
+            display: inline;
+            margin-right: 30px;
+
+        }
+
+        footer{
+            background-color: rgb(63, 63, 63);
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+        footer > p{
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <p>Menu</p>
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.notion.com" target="_blank">Notion</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assun">
+             <a href="#">cs:go</a> 
+             <a href="#">league of legends</a> 
+             <a href="#">dota</a>
+        </section>
+
+
+        <section id="noticias">
+                <article>
+                    <h2>Depois de Deft passa das oitavas</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus aperiam vel fugit ad officia sit tempora molestiae quasi suscipit ullam, cum magni officiis voluptate obcaecati culpa optio, harum distinctio deserunt.</p>
+                    <aside>Escrito por Patrick</aside>
+                </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Patrick Cruz</p>
+    </footer>
+</body>
+</html>

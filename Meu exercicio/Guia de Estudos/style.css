@@ -1,0 +1,247 @@
+@charset 'UTF-8';
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+:root{
+    --cor01: #D4F6FF;
+    --cor02: #ABDDEB;
+    --cor03: #64919E;
+    --cor04: rgb(36, 36, 36);
+    --cor05: #9E7854;
+    --cor06: #EBCAAB;
+}
+
+body{
+    background-color: var(--cor04);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(36, 36, 36);
+    min-height: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.24);
+}
+
+header h1{
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 3em;
+
+}
+
+header h2{
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+header small{
+    font-weight: bold;
+    color: white;
+    margin: 0px auto;
+}
+
+/*main*/
+.vid{
+    background-color: var(--cor05);
+    max-height:600px;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10% auto 10% auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.24);
+}
+
+main{
+    background-color: var(--cor04);
+    max-height:600px;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10% auto 10% auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.24);
+}
+
+article{
+    background-color: var(--cor05);
+    margin:-10px -10px 0px -10px ;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+article h1{
+
+
+    color: var(--cor04);
+
+    font-size: 3em;
+
+}
+article p{
+    margin: -10px -10px 0px -10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    font-weight: bold;
+    color: var(--cor04);
+
+    background-color: var(--cor05);
+}
+
+section h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(112, 112, 112);
+}
+
+section ul{
+    columns: 5;
+    list-style-position: inside;
+    list-style-type: none;
+    background-color: var(--cor05);
+    margin: 0px -10px -10px -10px;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+section ul>li>a{
+    text-decoration: none;
+    color: var(--cor04);
+    font-weight: bold;
+    padding: 0px 10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+
+section ul>li>a:hover{
+    background-color: var(--cor06);
+    color: var(--cor05);
+}
+
+section.arv{
+    background-color: var(--cor05);
+    margin: 0px -10px -10px -10px;
+    padding: 10px;
+    
+    border-radius: 10px;
+}
+
+section.arv > h3.arv{
+    color:var(--cor04);
+}
+
+section.arv>h3.arv>ul.arv{
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgb(0, 0, 0, 0.24);
+    margin: 0px auto;
+}
+
+
+.meio{
+    margin: 15px auto;
+    transition-duration: 1s;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.meio:hover{
+    background-color: var(--cor05);
+}
+
+.vid{
+    background-color: var(--cor05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.24);
+    margin-bottom: 0px;
+    transition-duration: 0.5s;
+}
+
+.vid:hover{
+    box-shadow: 0px 0px 15px 9px #ebcaab81;
+}
+
+iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+/*links externos ao site*/
+
+#dif{
+    margin: -10px;
+    border-radius: 10px;
+}
+
+ul.ext{
+    list-style-position: inside;
+    list-style-type: none;
+    columns: 3;
+}
+
+a.ext{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor04);
+    padding:0px 3px;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+a.ext:hover{
+    font-weight: bold;
+    background-color: var(--cor06);
+    color: var(--cor05);
+}
+
+a.ext::after{
+    content: '\00a0\1F517';
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    background-color: var(--cor05);
+    
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    color: white;
+    padding: 0px 10px;
+}
+
+footer a:hover{
+    color: var(--cor05);
+    background-color: var(--cor06);
+}

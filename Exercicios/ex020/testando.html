@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando meus conhecimentos com id, class e subclass</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #FFFAE3, #99E1D9);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color: #fffae3a8;
+            padding: 10px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        h1#principal{
+            color: #8a2be2;
+            text-align: center;
+        }
+        h1{
+            background-color: #f7567ca4;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        h2{
+            color: #F7567C;
+        }
+        .pimp{
+            background-color: #99E1D9;
+            color: snow;
+            border-radius: 3px;
+        }
+        div:hover{
+            color: #F7567C;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            background-color: #8A2BE2;
+            color: #99E1D9;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="principal">Titulo 1</h1>
+        <h2>titulo 1.1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error placeat quae deserunt libero fugit suscipit porro, harum dolorem esse odio, ea repellendus maiores. Eaque placeat nam debitis natus hic?</p>
+        <h1>titulo 2</h1>
+        <h2>titulo 2.1</h2>
+        <div>
+            um texto qualquer
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda molestiae fugiat quis non saepe similique doloremque possimus suscipit est, commodi ad sit aliquid soluta optio fuga pariatur nisi eum numquam.</p>
+        </div>
+        <p class="pimp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut optio eveniet facere nulla quos ipsum illum sed dolorem pariatur officia animi soluta, quas temporibus! Pariatur esse alias cupiditate ipsam?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum earum voluptates! Dolore excepturi aliquam fugit quia laudantium, iste neque nihil consequatur eligendi! Nulla, ratione in modi et voluptates velit!</p>
+        <p class="pimp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla dolorem amet praesentium labore! Hic, non itaque adipisci a veritatis unde corporis temporibus minima vitae nihil harum. Quae, veritatis voluptates?</p>
+    </main>
+</body>
+</html>

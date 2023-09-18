@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de box level</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            /*border: solid;
+            border-color: darkslategray;
+            border-width: 10px;
+
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            outline-width: 10px;
+            outline-style: groove;
+            outline-color: beige;
+
+            */
+            outline: 10px groove beige;
+            border:10px solid darkslategray;
+            padding:10px auto 10px auto;
+        }
+        a{
+            /*border: solid; a ordem importa
+            border-width: 10px;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            posso forçar a ancora seja uma caixa com o comando display:block; */
+
+            border:10px solid red;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>O h1 é um box level</h1>
+    <p>bem como o paragrafo, mas o <a href="#">link é um inline-level</a> como podemos ver</p>
+</body>
+</html>

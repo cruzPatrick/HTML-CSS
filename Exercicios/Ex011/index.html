@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens adaptáveis</h1>
+    <p>Aqui abaixo terá uma imagem que se adapta ao tamanho da sua tela</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto-Flexível">
+    </picture>
+    <h1>Audios</h1>
+    <p>Aqui vemos a primeira forma de colocar um audio</p>
+    <audio src="midia/Go Baroque - Freedom Trail Studio.mp3" controls preload="metadata"> </audio>
+    <p>Aqui vemos a segunda forma de se colocar um audio no site</p>
+    <!--Preload se for auto vai carregar tudo, metadata só os metadados e vai baixar ao clicar, none não vai baixar nada sóquando apertar-->
+    <audio preload="metadata" controls loop>
+        <!--Vai ser na ordem que está aqui, primeiro o mp3, depois o ogg e por ultimo o wav
+        não usar o wav para o site pois são mais pesados-->
+        <source src="midia/Cafe Regrette - Asher Fulero.mp3" type="audio/mpeg">
+        <source src="midia/Cafe Regrette - Asher Fulero.ogg" type="audio/ogg">
+        <source src="midia/Cafe Regrette - Asher Fulero.wav" type="audio/wav">
+        <p>Infelimente voce não foi possível carregar o audio, <a href="midia/Cafe Regrette - Asher Fulero.mp3">cliqui aqui para baixar o arquivo</a> </p>
+    </audio>
+
+</body>
+</html>
