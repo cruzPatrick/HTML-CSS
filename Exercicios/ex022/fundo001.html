@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imagem de fundo</title>
+    <style>
+        /*O professor não colocou main, coloquei pois queria ver como fica e como o wallpaper se comporta (ele se repete tambem se a resulução for menor*/
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+        main{
+            max-width: 97%;
+            margin: 0px auto;
+            padding: 10px;
+            border-radius: 10px;
+            border: 5px solid black;
+            background-image: url('imagens/pattern002.png');
+        }
+        .quad{
+            display: inline-block;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: grey;
+        }
+        .quad#fst{
+            background-color: cyan;
+        }
+        .quad#sec{
+            background-image: linear-gradient(to bottom, purple, red);
+        }
+        .quad#thr{
+            background-image: url('imagens/pattern001.png');
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="quad" id="fst">
+        </div>
+        <div class="quad" id="sec">
+        </div>
+        <div class="quad" id="thr">
+        </div>
+        <div class="quad">
+        </div>
+    </main>
+</body>
+</html>
