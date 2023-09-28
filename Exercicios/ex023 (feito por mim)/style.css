@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
 
 *{
     margin: 0px;
@@ -9,7 +9,7 @@
 
 :root{
     --fonth1: 'Passion One', cursive;
-    --fontp: 'Passions Conflict', cursive;
+    --fontp: 'Sriracha', cursive;
 }
 
 header{
@@ -43,28 +43,48 @@ header>p>a:hover{
 
 section{
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontp);
     font-size: 2em;
+    line-height: 1.1em;
     padding: 30px;
 }
+
 
 section.normal{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.267);
 }
 
-section.imagem#im01{
-    background-image: url('img/pexels-erlian-zakia-3093479.jpg');
-    background-position: center center;
+
+section.imagem{
+    height: 97vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
+
+    display: flex;
+    align-items: center;
+
 }
 
-section.imagem#im01>div.diff{
+section.imagem#im01{
+    background-image: url('img/pexels-erlian-zakia-3093479.jpg');
+    background-position: center center;
+}
+
+section.imagem>div.diff{
     background-color: rgba(0, 0, 0, 0.267);
-    max-width: 500px;
+    max-width: 400px;
+    max-height: 500px;
     color: white;
-    padding: 10px;
+    padding: 5px 10px;
+   
+    border-radius: 10px;
+}
+
+section.imagem#im02{
+    background-image: url('img/pexels-ronmar-lacamiento-806363.jpg');
+    background-position: center top;
 }
 
 
