@@ -138,7 +138,6 @@ section.arv{
     background-color: var(--cor05);
     margin: 0px -10px -10px -10px;
     padding: 10px;
-    
     border-radius: 10px;
 }
 
@@ -146,7 +145,10 @@ section.arv > h3.arv{
     color:var(--cor04);
 }
 
-section.arv>h3.arv>ul.arv{
+section.arv>ul.arv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border-radius: 10px;
     box-shadow: 0px 8px 15px rgb(0, 0, 0, 0.24);
     margin: 0px auto;
