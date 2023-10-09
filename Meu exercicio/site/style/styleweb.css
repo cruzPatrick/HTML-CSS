@@ -19,7 +19,7 @@
 
 body{
     font-family: var(--font1);
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: var(--cor4);
 }
 
@@ -56,7 +56,7 @@ div#mark{
 /*Aqui começa a divisão de conteúdos*/
 
 section{
-    min-height: 89vh;
+    min-height: 64vh;
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
 }
 
