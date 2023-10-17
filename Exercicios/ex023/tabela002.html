@@ -13,6 +13,10 @@
             border-collapse: collapse;
         }
 
+        thead{
+            position: relative;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -26,17 +30,41 @@
         td.num{
             text-align: right;
         }
+
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: gray;
+            border: 1px solid black;
+        }
+
+        /*Todas as linhas dentro de tbody, se colocar solto fica inclusive no tfoot*/
+        tbody>tr:nth-child(even){ /*2n*/
+            background-color: rgb(184, 184, 255);
+            font-weight: bold;
+        }
+
+        tbody>tr:nth-child(odd){/*2n-1*/
+            background-color: rgb(241, 210, 152);
+        }
+
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela semântica</h1>
-    <h2>Concentrações urbanas</h2>
     <!--Fiz a tabela pequena mas poderia ser maior-->
+    <!--Caption serve como titulo da tabela-->
     <table>
+        <caption>Concentrações Urbanas</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -55,11 +83,143 @@
                 <td>Belo Horizonte</td>
                 <td class="num">4.963.116</td>
             </tr>
+            <tr>
+                <td>Algum lugar1</td>
+                <td class="num">963.116</td>
+            </tr>
+            <tr>
+                <td>Alguem lugar2</td>
+                <td class="num">63.116</td>
+            </tr>
+            <tr>
+                <td>algum lugar3</td>
+                <td class="num">3.116</td>
+            </tr>
+            <tr>
+                <td>Algum lugar4</td>
+                <td class="num">116</td>
+            </tr>
+            <tr>
+                <td>Algum luagr5</td>
+                <td class="num">16</td>
+            </tr>
+            <tr>
+                <td>Algum lugar6</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>e</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>e</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>f</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>g</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>h</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>j</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>k</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>l</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>m</td>
+                <td class="num">20.684.947</td>
+            </tr>
+            <tr>
+                <td>n</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>o</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>q</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>r</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>s</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>t</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>u</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>v</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>w</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>y</td>
+                <td class="num">11.760.789</td>
+            </tr>
+            <tr>
+                <td>z</td>
+                <td class="num">11.760.789</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total da concentração</th>
+                <th scope="row">Total da concentração</th>
                 <td class="num"><strong>77.566.754</strong></td>
             </tr>
         </tfoot>
