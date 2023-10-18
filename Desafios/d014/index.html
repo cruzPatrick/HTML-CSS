@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 600px;
+            height: 600px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: center;
+        }
+        th, td.med{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+        td.med{
+            text-align: right;
+            
+        }
+        th.mat{
+            font-weight: bold;
+            background-color: white;
+            color: black;
+        }
+        .val{
+            text-align: right;
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="row">Área</th>
+                <th rowspan="2" scope="row">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="row">Media</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup" class="mat">Exatas</th>
+                <td>Matematica</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="col">total</th>
+                <td class="med">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup" class="mat">Humanas</th>
+                <td>História</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+                <td class="val">0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Total</th>
+                <td class="med">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
