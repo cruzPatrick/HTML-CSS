@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123);
+    }
+    menu>ul>li{
+        display: inline-block;
+        width: 100px;
+        padding-right: 5px;
+    }
+    main{
+        width: 700px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
+    }
+}

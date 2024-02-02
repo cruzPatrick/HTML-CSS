@@ -6,8 +6,10 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
 </head>
-<body>
+
+<body onresize="mudatam()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -45,6 +47,14 @@
         </article>
     </main>
     <script>
+        function mudatam(){
+            if(window.innerWidth >= 768){
+                opcao.style.display = 'block'
+            }else{
+                opcao.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if (opcao.style.display == 'block'){
                 opcao.style.display = 'none'
