@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Na Prática</title>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        article{
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 30%;
+            padding: 10px;
+        }
+        .flexcont{
+            display: flex;
+            flex-direction: column;
+        }
+        .flexcont p{
+            flex-grow: 1;
+        }
+
+        .flexcont button{
+            align-self: flex-end;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Display Flex</h1>
+
+    <section class="container">
+        <article class="flexcont">
+            <h2>titulo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quae. Aliquam repellat modi consectetur veritatis esse est laudantium quo architecto rem saepe, tempora vel minus eligendi dolorem nisi blanditiis culpa.</p>
+            <button>Vai</button>
+        </article>
+        <article class="flexcont">
+            <h2>titulo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quae. Aliquam repellat modi consectetur veritatis esse est laudantium quo architecto rem saepe, tempora vel minus eligendi dolorem nisi blanditiis culpa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quam alias veritatis doloribus cumque odit laboriosam. Cupiditate ad nesciunt sint deserunt, consectetur nulla, labore officia dolorem saepe animi expedita commodi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem cumque natus architecto aliquam esse distinctio quidem debitis rerum ex, cupiditate quasi praesentium at, quas officiis harum dicta iure mollitia.</p>
+            <button>Vai</button>
+        </article>
+        <article class="flexcont">
+            <h2>titulo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, quae. Aliquam repellat modi consectetur veritatis esse est laudantium quo architecto rem saepe.</p>
+            <button>Vai</button>
+        </article>
+    </section>
+
+</body>
+</html>
