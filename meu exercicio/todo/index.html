@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Crie seu to-do list escrevendo abaixo</h1>
+        <a href="https://github.com/cruzPatrick" target="_blank">
+            <img src="imagens/github-mark-white.png" alt="gato do github">
+        </a>
+    </header>
+    <main>
+        <form action="">
+            <label for="itexto">O que você quer salvar?</label>
+            <input type="text" name="texto" id="itexto" required>
+            <input type="button" value="salvar" onkeypress="todosave()">
+        </form>
+    </main>
+    <article id="ilista">
+
+    </article>
+    <script src="script.js"></script>
+</body>
+</html>
