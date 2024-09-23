@@ -10,22 +10,55 @@ body{
     min-width: 100%;
 }
 header{
-    background-color: turquoise;
+    background-color: rgb(147, 255, 223);
     display: flex;
     align-items: start;
     justify-content: space-between;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    max-width: 100%;
+    max-height: 10%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.062);
 }
 header > h1{
     font-size:1.5em ;
     padding: 20px;
 }
-header>a{
-    margin-right: -13%;
-}
-header> a > img{
+header>a>img{
     padding: 10px;
-    height: 20%;
-    width: 20%;
+    height: 50px;
+    width: 50px;
+}
+aside{
+    width: 500px;
+    margin: 2vw auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside>form>input[type=text]{
+    border-radius: 10px;
+    background-color: rgba(147, 255, 223, 0.589);
+    padding: px;
+}
+aside>form>input[type=text]:focus-within{
+    background-color: white;
+}
+
+aside>form>input[type=button]{
+    border-radius: 10px;
+    padding: 3px;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(168, 75, 168);
+}
+aside>form>input[type=button]:hover{
+    transition-duration: .5s;
+    background-color: rgb(147, 255, 223);
+    color: black;
+    border-style: solid;
+}
+article{
+    background-color: rgb(168, 75, 168);
+    border-radius: 10px;
 }
